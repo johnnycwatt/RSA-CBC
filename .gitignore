@@ -1,0 +1,15 @@
+# Build directories
+build/
+bin/
+*.o
+*.exe
+
+# IDE files
+.idea/
+*.iml
+*.code-workspace
+
+# CMake artifacts
+CMakeCache.txt
+cmake-build-debug/
+cmake_install.cmake
