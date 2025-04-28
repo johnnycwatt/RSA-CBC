@@ -251,7 +251,7 @@ std::vector<cpp_int> cbc_encrypt(const std::string& plaintext, cpp_int e, cpp_in
 /*
  * For Simulation purposes
  */
-int main(){
+/*int main(){
     int bits = 512; // Bit length for RSA modulus (n = p * q)
 
     //Generate RSA keys
@@ -285,4 +285,4 @@ int main(){
     std::cout << "Server: Decrypted Message: " << decrypted_message << "\n";
 
     return 0;
-}
+}*/

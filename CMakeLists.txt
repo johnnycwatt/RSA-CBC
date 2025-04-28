@@ -12,6 +12,15 @@ else()
     add_compile_options(-Wall -Wextra)
 endif()
 
+include_directories(${CMAKE_SOURCE_DIR}/common)
 
-add_executable(RSA_CBC common/rsa_cbc.cpp
-        common/rsa_cbc.h)
+
+add_executable(server server/server.cpp common/rsa_cbc.cpp)
+if (WIN32)
+    target_link_libraries(server ws2_32)
+endif()
+
+add_executable(client client/client.cpp common/rsa_cbc.cpp)
+if (WIN32)
+    target_link_libraries(client ws2_32)
+endif()

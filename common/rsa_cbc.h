@@ -1,7 +1,3 @@
-//
-// Created by johnn on 4/23/2025.
-//
-
 #ifndef RSA_CBC_H
 #define RSA_CBC_H
 
